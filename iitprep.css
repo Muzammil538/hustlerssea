@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:ital,wght@1,300&display=swap');
+/* Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    color: #f0f0f0;
+}
+header h1 {
+    letter-spacing: 4px;
+    z-index: 100;
+}
+.container {
+    background-color: #262626;
+    color: #2196f3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+.container .card a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #f0f0f0;
+    background-color: #1a75ff;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: larger;
+}
+.container .card h3 {
+    font-family: 'Koulen', cursive;
+    letter-spacing: 2px;
+    color: #006bb3;
+    background-color: #cccc;
+}
+.columns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.card {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #00ffcc;
+    width: 350px;
+    height: 330px;
+    text-align: center;
+    justify-content: end;
+    padding: 5px;
+}
+.card.simple-box {
+    height: auto;
+}
+.card.maths {
+    background-image: url("./Images/maths.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+}
+.card.physics {
+    background-image: url("./Images/physics.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+}
+.card.chemistry {
+    background-image: url("./Images/chemistry.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+}
+.card.biology {
+    background-image: url("./Images/biology.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+}
+@media screen and (max-width: 600px) {
+    header {
+        padding: 20px 10px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .columns {
+        grid-template-columns: auto;
+        row-gap: 50px;
+    }
+}
