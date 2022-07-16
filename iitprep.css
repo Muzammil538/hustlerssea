@@ -58,7 +58,6 @@ header h1 {
     height: 330px;
     text-align: center;
     justify-content: end;
-    padding: 5px;
 }
 .card.simple-box {
     height: auto;
