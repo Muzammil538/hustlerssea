@@ -96,4 +96,8 @@ header h1 {
         grid-template-columns: auto;
         row-gap: 50px;
     }
+    .card {
+        width: 200px;
+        height: 230px;
+    }
 }
