@@ -48,6 +48,8 @@ header h1 {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
+    align-items: center;
+    row-gap: 50px;
 }
 .card {
     display: block;
@@ -58,6 +60,7 @@ header h1 {
     height: 330px;
     text-align: center;
     justify-content: end;
+    padding: 0px;
 }
 .card.simple-box {
     height: auto;
