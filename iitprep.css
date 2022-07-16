@@ -95,6 +95,8 @@ header h1 {
     .columns {
         grid-template-columns: auto;
         row-gap: 50px;
+        justify-content: center;
+        align-items: center;
     }
     .card {
         width: 200px;
