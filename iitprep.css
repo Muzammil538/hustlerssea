@@ -19,8 +19,10 @@ header h1 {
     letter-spacing: 4px;
     z-index: 100;
 }
-.container {
+.bg-black {
     background-color: #262626;
+}
+.container {
     color: #2196f3;
     width: 100%;
     height: 100vh;
@@ -37,8 +39,9 @@ header h1 {
     text-align: center;
     font-weight: 600;
     font-size: larger;
+    display: block;
 }
-.container .card h3 {
+.container.bg-black .card h3 {
     font-family: 'Koulen', cursive;
     letter-spacing: 2px;
     color: #006bb3;
@@ -52,20 +55,28 @@ header h1 {
     flex-wrap: wrap;
     flex-basis: auto;
 }
+.columns-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+}
 .card {
     display: block;
     display: flex;
     flex-direction: column;
     border: 1px solid #00ffcc;
-    width: 300px;
-    height: 330px;
+    width: 250px;
+    height: 120px;
     text-align: center;
-    justify-content: end;
-    padding: 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
 }
-.card.simple-box {
+/* .card.simple-box {
     height: auto;
-}
+} */
 .card.maths {
     background-image: url("./Images/maths.jpeg");
     background-repeat: no-repeat;
@@ -92,8 +103,11 @@ header h1 {
     }
     .container {
         padding: 20px;
+        height: 100vh;
+        width: 100%;
     }
-    .columns {
+    .columns-grid {
+        display: grid;
         grid-template-columns: auto;
         row-gap: 50px;
         justify-content: center;
@@ -101,6 +115,7 @@ header h1 {
     }
     .card {
         width: 200px;
-        height: 230px;
+        height: 130px;
+        background-color: #201022;
     }
 }
